@@ -1,0 +1,33 @@
+name: raonson
+description: Raonson — modern social app
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+
+  # Firebase
+  firebase_core: ^2.20.0
+  firebase_auth: ^4.8.0
+  cloud_firestore: ^5.9.0
+  firebase_storage: ^11.0.0
+
+  # UI & Media
+  cached_network_image: ^3.2.3
+  image_picker: ^1.0.7
+  video_player: ^2.6.1
+  intl: ^0.18.1
+
+  # Utils
+  uuid: ^3.0.7
+  shared_preferences: ^2.2.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
