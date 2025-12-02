@@ -11,10 +11,10 @@ dependencies:
   cupertino_icons: ^1.0.5
 
   # Firebase
-  firebase_core: ^2.20.0
-  firebase_auth: ^4.8.0
-  cloud_firestore: ^5.9.0
-  firebase_storage: ^11.0.0
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.17.5
+  firebase_storage: ^11.6.4
 
   # UI & Media
   cached_network_image: ^3.2.3
@@ -30,4 +30,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/images/
