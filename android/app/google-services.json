@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "406873300982",
+    "project_id": "raonson-app-55ba9",
+    "storage_bucket": "raonson-app-55ba9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406873300982:android:6dbce3cd232d9a3e2f71d7",
+        "android_client_info": {
+          "package_name": "com.wct.raonson"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMrdEOL93s9IwQXkuvNvujgb1WAehuxOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
