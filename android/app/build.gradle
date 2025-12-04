@@ -1,7 +1,7 @@
 plugins {
-    id 'com.android.application'
-    id 'com.google.gms.google-services'
-    id 'kotlin-android'
+    id "com.android.application"
+    id "com.google.gms.google-services"
+    id "kotlin-android"
 }
 
 android {
@@ -21,15 +21,6 @@ android {
             minifyEnabled false
         }
     }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = '17'
-    }
 }
 
 dependencies {
@@ -37,6 +28,4 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-storage'
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
 }
