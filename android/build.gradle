@@ -1,21 +1,35 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "com.google.gms.google-services"
+}
+
+android {
+    namespace "com.wct.raonson"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.wct.raonson"
+        
+        // Ин сатр minSdk 23-ро иваз мекунад. Он барои ҳалли мушкилоти
+        // "deleted Android v1 embedding" ва мутобиқат бо Flutter SDK-и нав кӯмак мекунад.
+        minSdkVersion flutter.minSdkVersion 
+        
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.2'
-        classpath 'com.google.gms:google-services:4.4.0'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage'
 }
